@@ -1,0 +1,57 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "Login into Task_Mangement Website",
+        "id": "task-management-website;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "line": 7,
+            "name": "the user launch the chrome application",
+            "match": {
+              "location": "Task_Mangement_StepDefinition.the_user_launch_the_chrome_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "line": 8,
+            "name": "Clicking on Administration to nagivate Login Page",
+            "keyword": "When "
+          },
+          {
+            "line": 9,
+            "name": "The user login using username and password",
+            "keyword": "Then "
+          },
+          {
+            "line": 10,
+            "name": "Click on login Button",
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@TC_01_Login"
+          }
+        ]
+      }
+    ],
+    "name": "Task_Management Website",
+    "description": "",
+    "id": "task-management-website",
+    "keyword": "Feature",
+    "uri": "src/main/resources/feature/TestCase.Feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Task_Management"
+      }
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 12,
+        "name": "",
+        "description": "Login and Search product",
+        "id": "myntra-website;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "line": 14,
+            "name": "user launch the chrome application",
+            "match": {
+              "location": "Mynta_SearchProduct.user_launch_the_chrome_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "line": 15,
+            "name": "the user loggedin to the home page",
+            "keyword": "When "
+          },
+          {
+            "line": 16,
+            "name": "the user search the product",
+            "keyword": "Then "
+          },
+          {
+            "line": 17,
+            "name": "click on down arrow and enter key the user get the searching products",
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@TC02_Mytra"
+          }
+        ]
+      }
+    ],
+    "name": "Myntra Website",
+    "description": "",
+    "id": "myntra-website",
+    "keyword": "Feature",
+    "uri": "src/main/resources/feature/Testcase.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Myntra"
+      }
+    ]
+  }
+]

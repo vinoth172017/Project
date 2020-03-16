@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="81649" started-at="2020-03-05T15:05:29 IST" finished-at="2020-03-05T15:06:51 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="81649" started-at="2020-03-05T15:05:29 IST" finished-at="2020-03-05T15:06:51 IST">
+      <class name="Com.testcase.Amazon_Account_Testcase">
+        <test-method status="PASS" signature="startup()[pri:0, instance:Com.testcase.Amazon_Account_Testcase@701fc37a]" name="startup" is-config="true" duration-ms="9840" started-at="2020-03-05T15:06:35 IST" finished-at="2020-03-05T15:06:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="PASS" signature="move()[pri:0, instance:Com.testcase.Amazon_Account_Testcase@701fc37a]" name="move" duration-ms="2395" started-at="2020-03-05T15:06:45 IST" finished-at="2020-03-05T15:06:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- move -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Com.testcase.Amazon_Account_Testcase@701fc37a]" name="close" is-config="true" duration-ms="2990" started-at="2020-03-05T15:06:48 IST" finished-at="2020-03-05T15:06:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Com.testcase.Amazon_Account_Testcase -->
+      <class name="Com.testcase.Amazon_search_testcase">
+        <test-method status="PASS" signature="startup()[pri:0, instance:Com.testcase.Amazon_search_testcase@33cb5951]" name="startup" is-config="true" duration-ms="11779" started-at="2020-03-05T15:05:29 IST" finished-at="2020-03-05T15:05:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="PASS" signature="move()[pri:0, instance:Com.testcase.Amazon_search_testcase@33cb5951]" name="move" duration-ms="9167" started-at="2020-03-05T15:05:41 IST" finished-at="2020-03-05T15:05:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- move -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Com.testcase.Amazon_search_testcase@33cb5951]" name="close" is-config="true" duration-ms="3981" started-at="2020-03-05T15:05:50 IST" finished-at="2020-03-05T15:05:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Com.testcase.Amazon_search_testcase -->
+      <class name="Com.testcase.Amazon_login_testcase">
+        <test-method status="PASS" signature="startup()[pri:0, instance:Com.testcase.Amazon_login_testcase@365c30cc]" name="startup" is-config="true" duration-ms="9595" started-at="2020-03-05T15:05:54 IST" finished-at="2020-03-05T15:06:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="PASS" signature="login()[pri:0, instance:Com.testcase.Amazon_login_testcase@365c30cc]" name="login" duration-ms="10092" started-at="2020-03-05T15:06:04 IST" finished-at="2020-03-05T15:06:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Com.testcase.Amazon_login_testcase@365c30cc]" name="close" is-config="true" duration-ms="3874" started-at="2020-03-05T15:06:14 IST" finished-at="2020-03-05T15:06:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="startup()[pri:0, instance:Com.testcase.Amazon_login_testcase@365c30cc]" name="startup" is-config="true" duration-ms="8733" started-at="2020-03-05T15:06:18 IST" finished-at="2020-03-05T15:06:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:Com.testcase.Amazon_login_testcase@365c30cc]" name="login1" duration-ms="6664" started-at="2020-03-05T15:06:26 IST" description="invalid login" finished-at="2020-03-05T15:06:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Com.testcase.Amazon_login_testcase@365c30cc]" name="close" is-config="true" duration-ms="2460" started-at="2020-03-05T15:06:33 IST" finished-at="2020-03-05T15:06:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Com.testcase.Amazon_login_testcase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
