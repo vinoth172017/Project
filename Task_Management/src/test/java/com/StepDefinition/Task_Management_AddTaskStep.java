@@ -25,7 +25,7 @@ public class Task_Management_AddTaskStep {
 	@Then("^Clicking on AddTask to nagivate Add Task Page$")
 	public void clicking_on_AddTask_to_nagivate_Add_Task_Page() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-	Ta.TaskDeatils();
+	Ta.TaskDetails();
 	}
 
 	@Then("^Click on Addbutton to add Task$")

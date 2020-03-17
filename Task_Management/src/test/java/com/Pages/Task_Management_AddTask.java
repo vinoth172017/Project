@@ -65,7 +65,7 @@ public class Task_Management_AddTask {
 		driver.findElement(Password).sendKeys(Pass);
 		driver.findElement(Loginclick).click();	
 	}
-	public void TaskDeatils() throws InterruptedException
+	public void TaskDetails() throws InterruptedException
 	{
 		driver.findElement(Task).sendKeys("Selenium");
 		driver.findElement(Description).sendKeys("Selenium is automation tools. Selenium is a portable framework for testing web applications. Selenium provides a playback tool for authoring functional tests without the need to learn a test scripting language.");
