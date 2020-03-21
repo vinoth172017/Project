@@ -22,7 +22,7 @@ import cucumber.api.java.en.When;
 public class TaskMangementStepdefinition {
 		
 		LoginPage tasklogin=new LoginPage(); 		//Creating Object for login Pages	
-		ExelUlities taskexel = new ExelUlities();	 //Creating Object for Excelulities
+		ExelUlities taskexel = new ExelUlities();	 //Creating Object for Excel ulities
 		AddTaskPage taskadd=new AddTaskPage();		 //Creating Object for Add task
 		SearchPage tasksearch=new SearchPage(); 		//Creating Object for Search Task
 		TaskTablePage taskprint=new TaskTablePage(); 	//Creating Object for print Task list
@@ -31,20 +31,21 @@ public class TaskMangementStepdefinition {
 		SearchDeleteTaskPage deletesearch=new SearchDeleteTaskPage(); 		//creating object for search deleted task
 		SearchProjectPage searchproject = new SearchProjectPage();	 	//creating object for search particular project
 		EmployeeDatailsPage employee=new EmployeeDatailsPage(); 	//creating object for employee details
-		AddEmployeePage addempl= new AddEmployeePage(); 			// creating object for add employee
+		AddEmployeePage addempl= new AddEmployeePage(); 	 		// creating object for add employee
 		EmployeeLoginPage employeelogin= new EmployeeLoginPage(); // creating object for employee login
 		AddTaskTypePage tasktype=new AddTaskTypePage();  //creating object for task type
 		SearchClosedStatusPage taskclosed= new SearchClosedStatusPage();	 // creating object for searching closed status
 		PriorityHighTaskPage priority= new PriorityHighTaskPage();	 //creating object for Prioritytask to print console 
 		
-//	Login scenario methods 	
-	@Given("^the user launch the chrome application$")
+//@TC01	Login scenario methods 	
+		
+	@Given("^The user launch the Chrome application$")
 	public void the_user_launch_the_chrome_application() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
 		tasklogin.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
 	}
 
-	@When("^Clicking on Administration to nagivate Login Page$")
+	@When("^Clicking on administration to nagivate Login Page$")
 	public void clicking_on_Administration_to_nagivate_Login_Page() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		tasklogin.loginPage();
@@ -67,56 +68,65 @@ public class TaskMangementStepdefinition {
 		    }
 	}
 
-	@Then("^Click on login Button$")
+	@Then("^Clicking on login button$")
 	public void click_on_login_Button() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		tasklogin.loginClick();
 	}
 	
-//Add Task Scenario Methods
-	@When("^Click AddTask and login$")
+//@TC02 Add Task Scenario Methods
+	
+	@Given("^Click on AddTask and login$")
 	public void click_AddTask_and_login() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		taskadd.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
 		taskadd.loginDetails(taskexel.Task_Management_username(1),taskexel.Task_Management_password(1));
 
 	}
-	@Then("^Clicking on AddTask to nagivate Add Task Page$")
+	@When("^Enter the task details$")
 	public void clicking_on_AddTask_to_nagivate_Add_Task_Page() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		taskadd.taskDeatils();
 	}
 
-	@Then("^Click on Addbutton to add Task$")
+	@Then("^Click on addbutton to add Task$")
 	public void click_on_Addbutton_to_add_Task() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		taskadd.addTask();
 	}
 	
-//Search Scenario Methods
-	@Then("^Enter Correct Details to search$")
+//@TC03 Search Scenario Methods
+	
+	@Given("^Enter correct details to search the added task$")
 	public void enter_Correct_Details_to_search() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		tasksearch.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
 		tasksearch.searchDetails();
 	}
 
-	@Then("^Click Search Button to Get Details$")
+	@When("^Click on search button to get the details of the task$")
 	public void click_Search_Button_to_Get_Details() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		tasksearch.search();
 	}
 	
-//Printing the web table Scenario Methods
-	@Then("^Print the home page Task Table in the console$")
+//TC 04 Printing the web table Scenario Methods
+	
+	@Given("^Open the home page$")
+	public void Open_the_home_page()
+	{
+		taskprint.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
+	}
+	
+	@Then("^In task web table get the first row in the console$")
 	public void print_the_home_page_Task_Table_in_the_console() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-		taskprint.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");	
+	    // Write code here that turns the phrase above into concrete actions	
 		taskprint.printTable();
 	}
 
-//Edit task Scenario Methods
-	@When("^Click any task from the Tasks list$")
+//TC 05 Edit task Scenario Methods
+	
+	@Given("^Click first task from the tasks list$")
 	public void click_any_task_from_the_Tasks_list() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		taskedit.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");	
@@ -126,19 +136,21 @@ public class TaskMangementStepdefinition {
 		//taskedit.login();
 	}
 
-	@Then("^Edit any one field from Add/Edit task$")
+	@When("^Edit name field from Add/Edit task$")
 	public void edit_any_one_field_from_Add_Edit_task() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		taskedit.Edit();
 	}
 
-	@Then("^Click on submit Button$")
+	@Then("^Click on submit Button to update task$")
 	public void click_on_submit_Button() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	  taskedit.submit(); 
 	}
-//TaskManagement Delete
-	@When("^Click any task from tasks list$")
+	
+//TC 06 TaskManagement Delete
+	
+	@Given("^Click first task from tasks list$")
 	public void click_any_task_from_tasks_list() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		taskdelete.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
@@ -146,47 +158,51 @@ public class TaskMangementStepdefinition {
 		taskdelete.loginDetails(taskexel.Task_Management_username(1),taskexel.Task_Management_password(1));
 	}
 
-	@Then("^Click delete button to delete details$")
+	@When("^Click delete button to delete the task$")
 	public void click_delete_button_to_delete_details() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		taskdelete.delete();
 	}
 	
-//Searching Deleted deatils is there are not
-	@When("^Fill the deleted details in Search box$")
+//TC 07 Searching Deleted deatils is there are not
+	
+	@Given("^Fill the deleted task details in Search box$")
 	public void fill_the_deleted_details_in_Search_box() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		deletesearch.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
 		deletesearch.searchData();
 	}
 
-	@Then("^Click the search button$")
+	@When("^Click the search button$")
 	public void click_the_search_button() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		deletesearch.submit();
 	}
 
-	@Then("^Print the search result$")
+	@Then("^Print the search result in the console$")
 	public void print_the_search_result() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		deletesearch.print();
 	}
 	
-//Search the Codecharge project
-	@When("^Search as Codecharge in Project$")
+//TC 08 Search the Codecharge project
+	
+	@Given("^Search as Codecharge in Project$")
 	public void click_dropdown_box_in_project_from_search_and_select_codecharge() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		searchproject.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
 		searchproject.searchProject();
 	}
 
-	@Then("^click on the search button get the result$")
+	@Then("^click on the search button get the search result$")
 	public void click_on_the_search_button() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		searchproject.submit();  
 	}
-//get the employee deatils
-	@When("^Clicking Adminstration$")
+	
+//TC 09 get the employee deatils
+	
+	@Given("^Clicking Adminstration$")
 	public void clicking_Adminstration() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		employee.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
@@ -200,38 +216,39 @@ public class TaskMangementStepdefinition {
 		employee.employe();
 	}
 
-	@Then("^Print the anyone Employees list in the console$")
+	@Then("^Print the anyone Employee name and email in the console$")
 	public void print_the_anyone_Employees_list_in_the_console() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		employee.printEmp();
 	}
 	
-//AddEmployee sceanrio methods
-	@When("^the user click on Administartion and Login is proceeded$")
+//TC 10 AddEmployee sceanrio methods
+	
+	@Given("^the user click on administartion and login is proceeded$")
 	public void the_user_click_on_Administartion_and_Login_is_proceeded() throws Throwable {
 		addempl.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
 		addempl.administartion();
 	}
 
-	@Then("^the user click on Employee field$")
+	@When("^the user click on employee field$")
 	public void the_user_click_on_Employee_field() throws Throwable {
 		addempl.employee();
 	   
 	}
 
-	@Then("^the user click on Add Employee field and enter the credentials$")
+	@Then("^the user click on add employee field and enter the credentials$")
 	public void the_user_click_on_Add_Employee_field_and_enter_the_credentials() throws Throwable {
 		addempl.employeeDetails();
 	}
 
-	@And("^click on Add button$")
+	@And("^click on add button$")
 	public void click_on_Add_button() throws Throwable {
 		addempl.add();
 	}
 	
-//Check employee login
+//TC 11 Check employee login
 	
-	@When("^the user click on Administration tab$")
+	@Given("^the user click on Administration tab$")
 	public void the_user_click_on_Administration_tab() throws Throwable {
 		employeelogin.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
 		employeelogin.administration();
@@ -244,9 +261,9 @@ public class TaskMangementStepdefinition {
 	    
 	}
 	
-//add Hold type in task
+//TC 12 add Hold type in task
 	
-	@When("^the user click  Administration tab and do valid login$")
+	@Given("^the user click  Administration tab and do valid login$")
 	public void the_user_click_Administration_tab_and_do_valid_login()  
 	{
 		tasktype.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
@@ -264,30 +281,31 @@ public class TaskMangementStepdefinition {
 		tasktype.addType();
 	    
 	}
-// Search Closed Status
-
-@Then("^the status field is inspected and search button is clicked$")
-public void the_status_field_is_inspected_and_search_button_is_clicked() throws Throwable {
+	
+//TC 13 Search Closed Status
+	
+	@Given("the user enter the home page and select the status")
+	public void the_user_enter_the_home_page_and_select_the_status ()
+	{
 	taskclosed.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
-	taskclosed.search_table();
-   
-}
+	}
+	@Then("^the status field is inspected and search button is clicked$")
+	public void the_status_field_is_inspected_and_search_button_is_clicked() throws Throwable {
+		taskclosed.search_table();
+	}
 
-//Print the priority high task table
+//TC 14 Print the priority high task table
 
-@Then("^Priority field is inspected and search button should be clicked$")
-public void priority_field_is_inspected_and_search_button_should_be_clicked()  
-{
+	@Given("^Priority field is inspected and search button should be clicked$")
+	public void priority_field_is_inspected_and_search_button_should_be_clicked()  
+	{
 	priority.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
 	priority.priority();   
-}
+	}
 
-@And("^Print Task table$")
-public void print_Task_table() throws InterruptedException  
-{
+	@And("^Print the priority high Task table in the console$")
+	public void print_Task_table() throws InterruptedException  
+	{
 	priority.print();   
-}
-	
-	
-	
+}	
 }

@@ -50,7 +50,7 @@ public class TaskTablePage {
 		System.out.println("Printing the Task details in the consloe "+row.size()); // size of the row
 		for (int i =1;i<row.size();i++)
 		{	
-				String a= driver.findElement(By.xpath("/html/body/table[3]/tbody/tr/td/table[2]/tbody/tr[" + (i+1)+ "]/td")).getText();
+				String a= driver.findElement(By.xpath("/html/body/table[3]/tbody/tr/td/table[2]/tbody/tr[" + (i+1)+ "]")).getText();
 				//locator for the column and for loop for itration printing to end column 
 				System.out.println(a);
 		}			// printing the web table column in console

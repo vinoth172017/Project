@@ -12,11 +12,11 @@
         "steps": [
           {
             "result": {
-              "duration": 6604625200,
+              "duration": 10680368000,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user launch the chrome application",
+            "name": "The user launch the Chrome application",
             "match": {
               "location": "TaskMangementStepdefinition.the_user_launch_the_chrome_application()"
             },
@@ -24,11 +24,11 @@
           },
           {
             "result": {
-              "duration": 1531974300,
+              "duration": 1872115000,
               "status": "passed"
             },
             "line": 8,
-            "name": "Clicking on Administration to nagivate Login Page",
+            "name": "Clicking on administration to nagivate Login Page",
             "match": {
               "location": "TaskMangementStepdefinition.clicking_on_Administration_to_nagivate_Login_Page()"
             },
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 21053250900,
+              "duration": 28360017800,
               "status": "passed"
             },
             "line": 9,
@@ -48,11 +48,11 @@
           },
           {
             "result": {
-              "duration": 320030400,
+              "duration": 253845600,
               "status": "passed"
             },
             "line": 10,
-            "name": "Click on login Button",
+            "name": "Clicking on login button",
             "match": {
               "location": "TaskMangementStepdefinition.click_on_login_Button()"
             },
@@ -76,11 +76,11 @@
         "steps": [
           {
             "result": {
-              "duration": 11401138700,
+              "duration": 11677058400,
               "status": "passed"
             },
             "line": 15,
-            "name": "Click AddTask and login",
+            "name": "Click on AddTask and login",
             "match": {
               "location": "TaskMangementStepdefinition.click_AddTask_and_login()"
             },
@@ -88,23 +88,23 @@
           },
           {
             "result": {
-              "duration": 6765930600,
+              "duration": 7927549400,
               "status": "passed"
             },
             "line": 16,
-            "name": "Clicking on AddTask to nagivate Add Task Page",
+            "name": "Enter the task details",
             "match": {
               "location": "TaskMangementStepdefinition.clicking_on_AddTask_to_nagivate_Add_Task_Page()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 4174145400,
+              "duration": 4497127700,
               "status": "passed"
             },
             "line": 17,
-            "name": "Click on Addbutton to add Task",
+            "name": "Click on addbutton to add Task",
             "match": {
               "location": "TaskMangementStepdefinition.click_on_Addbutton_to_add_Task()"
             },
@@ -128,27 +128,27 @@
         "steps": [
           {
             "result": {
-              "duration": 4638218500,
+              "duration": 6665244900,
               "status": "passed"
             },
             "line": 22,
-            "name": "Enter Correct Details to search",
+            "name": "Enter correct details to search the added task",
             "match": {
               "location": "TaskMangementStepdefinition.enter_Correct_Details_to_search()"
             },
-            "keyword": "Then "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4218592000,
+              "duration": 8564486500,
               "status": "passed"
             },
             "line": 23,
-            "name": "Click Search Button to Get Details",
+            "name": "Click on search button to get the details of the task",
             "match": {
               "location": "TaskMangementStepdefinition.click_Search_Button_to_Get_Details()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           }
         ],
         "tags": [
@@ -168,14 +168,23 @@
         "steps": [
           {
             "result": {
-              "duration": 11945583300,
+              "duration": 6384863200,
               "status": "passed"
             },
             "line": 28,
-            "name": "Print the home page Task Table in the console",
+            "name": "Open the home page",
             "match": {
-              "location": "TaskMangementStepdefinition.print_the_home_page_Task_Table_in_the_console()"
+              "location": "TaskMangementStepdefinition.Open_the_home_page()"
             },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "In task web table get the first row in the console",
+            "match": {},
             "keyword": "Then "
           }
         ],
@@ -187,7 +196,7 @@
         ]
       },
       {
-        "line": 31,
+        "line": 32,
         "name": "",
         "description": "Add/Edit Task in TaskMangement Website",
         "id": "task-management-website;",
@@ -196,35 +205,35 @@
         "steps": [
           {
             "result": {
-              "duration": 9392798000,
+              "duration": 10888701800,
               "status": "passed"
             },
-            "line": 33,
-            "name": "Click any task from the Tasks list",
+            "line": 34,
+            "name": "Click first task from the tasks list",
             "match": {
               "location": "TaskMangementStepdefinition.click_any_task_from_the_Tasks_list()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 621972400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Edit name field from Add/Edit task",
+            "match": {
+              "location": "TaskMangementStepdefinition.edit_any_one_field_from_Add_Edit_task()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 334104500,
+              "duration": 7534299800,
               "status": "passed"
             },
-            "line": 34,
-            "name": "Edit any one field from Add/Edit task",
-            "match": {
-              "location": "TaskMangementStepdefinition.edit_any_one_field_from_Add_Edit_task()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7442657900,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "Click on submit Button",
+            "line": 36,
+            "name": "Click on submit Button to update task",
             "match": {
               "location": "TaskMangementStepdefinition.click_on_submit_Button()"
             },
@@ -233,13 +242,13 @@
         ],
         "tags": [
           {
-            "line": 30,
+            "line": 31,
             "name": "@TC_05_Edit"
           }
         ]
       },
       {
-        "line": 38,
+        "line": 39,
         "name": "",
         "description": "Deleting a Task in TaskMangement Website",
         "id": "task-management-website;",
@@ -248,38 +257,38 @@
         "steps": [
           {
             "result": {
-              "duration": 10160839500,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "Click any task from tasks list",
-            "match": {
-              "location": "TaskMangementStepdefinition.click_any_task_from_tasks_list()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4501565400,
+              "duration": 11506328900,
               "status": "passed"
             },
             "line": 41,
-            "name": "Click delete button to delete details",
+            "name": "Click first task from tasks list",
+            "match": {
+              "location": "TaskMangementStepdefinition.click_any_task_from_tasks_list()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8670997000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Click delete button to delete the task",
             "match": {
               "location": "TaskMangementStepdefinition.click_delete_button_to_delete_details()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           }
         ],
         "tags": [
           {
-            "line": 37,
+            "line": 38,
             "name": "@TC_06_Delete"
           }
         ]
       },
       {
-        "line": 44,
+        "line": 45,
         "name": "",
         "description": "Checking Deleted details is show are not in TaskMangement Website",
         "id": "task-management-website;",
@@ -288,35 +297,35 @@
         "steps": [
           {
             "result": {
-              "duration": 4493047300,
+              "duration": 5483937200,
               "status": "passed"
             },
-            "line": 46,
-            "name": "Fill the deleted details in Search box",
+            "line": 47,
+            "name": "Fill the deleted task details in Search box",
             "match": {
               "location": "TaskMangementStepdefinition.fill_the_deleted_details_in_Search_box()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1293163500,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Click the search button",
+            "match": {
+              "location": "TaskMangementStepdefinition.click_the_search_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1391681300,
+              "duration": 7134970800,
               "status": "passed"
             },
-            "line": 47,
-            "name": "Click the search button",
-            "match": {
-              "location": "TaskMangementStepdefinition.click_the_search_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7388884100,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "Print the search result",
+            "line": 49,
+            "name": "Print the search result in the console",
             "match": {
               "location": "TaskMangementStepdefinition.print_the_search_result()"
             },
@@ -325,38 +334,38 @@
         ],
         "tags": [
           {
-            "line": 43,
+            "line": 44,
             "name": "@TC_07_Searching_Delete_Task"
           }
         ]
       },
       {
-        "line": 51,
+        "line": 52,
         "name": "",
-        "description": "Searching Project in TaskMangement Website",
+        "description": "Searching Codecharge Project in TaskMangement Website",
         "id": "task-management-website;",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6376842900,
+              "duration": 7040946500,
               "status": "passed"
             },
-            "line": 53,
+            "line": 54,
             "name": "Search as Codecharge in Project",
             "match": {
               "location": "TaskMangementStepdefinition.click_dropdown_box_in_project_from_search_and_select_codecharge()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 8313273000,
+              "duration": 8158525800,
               "status": "passed"
             },
-            "line": 54,
-            "name": "click on the search button get the result",
+            "line": 55,
+            "name": "click on the search button get the search result",
             "match": {
               "location": "TaskMangementStepdefinition.click_on_the_search_button()"
             },
@@ -365,37 +374,37 @@
         ],
         "tags": [
           {
-            "line": 50,
+            "line": 51,
             "name": "@TC_08_TaskList_Search"
           }
         ]
       },
       {
-        "line": 57,
+        "line": 58,
         "name": "",
-        "description": "  Printing anyone user from employee Deatils in TaskMangement Website",
+        "description": "  Printing anyone employee name and email from employee Deatils in TaskMangement Website",
         "id": "task-management-website;",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7377865000,
+              "duration": 9885340200,
               "status": "passed"
             },
-            "line": 59,
+            "line": 60,
             "name": "Clicking Adminstration",
             "match": {
               "location": "TaskMangementStepdefinition.clicking_Adminstration()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 878891000,
+              "duration": 841689400,
               "status": "passed"
             },
-            "line": 60,
+            "line": 61,
             "name": "Click on employee details",
             "match": {
               "location": "TaskMangementStepdefinition.click_on_employee_details()"
@@ -404,11 +413,11 @@
           },
           {
             "result": {
-              "duration": 7294991200,
+              "duration": 7243454400,
               "status": "passed"
             },
-            "line": 61,
-            "name": "Print the anyone Employees list in the console",
+            "line": 62,
+            "name": "Print the anyone Employee name and email in the console",
             "match": {
               "location": "TaskMangementStepdefinition.print_the_anyone_Employees_list_in_the_console()"
             },
@@ -417,13 +426,13 @@
         ],
         "tags": [
           {
-            "line": 56,
+            "line": 57,
             "name": "@Tc_09_Employees_list_printing"
           }
         ]
       },
       {
-        "line": 64,
+        "line": 65,
         "name": "",
         "description": "    Add New Employee in Employee list",
         "id": "task-management-website;",
@@ -432,35 +441,35 @@
         "steps": [
           {
             "result": {
-              "duration": 11936929200,
+              "duration": 11858505200,
               "status": "passed"
             },
-            "line": 66,
-            "name": "the user click on Administartion and Login is proceeded",
+            "line": 67,
+            "name": "the user click on administartion and login is proceeded",
             "match": {
               "location": "TaskMangementStepdefinition.the_user_click_on_Administartion_and_Login_is_proceeded()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 721957700,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "the user click on employee field",
+            "match": {
+              "location": "TaskMangementStepdefinition.the_user_click_on_Employee_field()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 861827200,
+              "duration": 1864084400,
               "status": "passed"
             },
-            "line": 67,
-            "name": "the user click on Employee field",
-            "match": {
-              "location": "TaskMangementStepdefinition.the_user_click_on_Employee_field()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1928014900,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "the user click on Add Employee field and enter the credentials",
+            "line": 69,
+            "name": "the user click on add employee field and enter the credentials",
             "match": {
               "location": "TaskMangementStepdefinition.the_user_click_on_Add_Employee_field_and_enter_the_credentials()"
             },
@@ -468,11 +477,11 @@
           },
           {
             "result": {
-              "duration": 5231842600,
+              "duration": 9385005400,
               "status": "passed"
             },
-            "line": 69,
-            "name": "click on Add button",
+            "line": 70,
+            "name": "click on add button",
             "match": {
               "location": "TaskMangementStepdefinition.click_on_Add_button()"
             },
@@ -481,13 +490,13 @@
         ],
         "tags": [
           {
-            "line": 63,
+            "line": 64,
             "name": "@TC_10_Add_Employee"
           }
         ]
       },
       {
-        "line": 72,
+        "line": 73,
         "name": "",
         "description": "  To check the added employee getting logged in",
         "id": "task-management-website;",
@@ -496,22 +505,22 @@
         "steps": [
           {
             "result": {
-              "duration": 6896141800,
+              "duration": 6018480300,
               "status": "passed"
             },
-            "line": 74,
+            "line": 75,
             "name": "the user click on Administration tab",
             "match": {
               "location": "TaskMangementStepdefinition.the_user_click_on_Administration_tab()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 9846415700,
+              "duration": 9588941100,
               "status": "passed"
             },
-            "line": 75,
+            "line": 76,
             "name": "the user enters login credentials and clicks login",
             "match": {
               "location": "TaskMangementStepdefinition.the_user_enters_login_credentials_and_clicks_login()"
@@ -521,13 +530,13 @@
         ],
         "tags": [
           {
-            "line": 71,
+            "line": 72,
             "name": "@TC_11_Check_Login"
           }
         ]
       },
       {
-        "line": 78,
+        "line": 79,
         "name": "",
         "description": "   To add Hold Type",
         "id": "task-management-website;",
@@ -536,22 +545,22 @@
         "steps": [
           {
             "result": {
-              "duration": 7896814900,
+              "duration": 9540608600,
               "status": "passed"
             },
-            "line": 80,
+            "line": 81,
             "name": "the user click  Administration tab and do valid login",
             "match": {
               "location": "TaskMangementStepdefinition.the_user_click_Administration_tab_and_do_valid_login()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2080404900,
+              "duration": 2067624800,
               "status": "passed"
             },
-            "line": 81,
+            "line": 82,
             "name": "the user click on Types field and clicks Add New Type",
             "match": {
               "location": "TaskMangementStepdefinition.the_user_click_on_Types_field_and_clicks_Add_New_Type()"
@@ -560,10 +569,10 @@
           },
           {
             "result": {
-              "duration": 9558709300,
+              "duration": 5570283300,
               "status": "passed"
             },
-            "line": 82,
+            "line": 83,
             "name": "the user enters Type Name and submit",
             "match": {
               "location": "TaskMangementStepdefinition.the_user_enters_Type_Name()"
@@ -573,13 +582,13 @@
         ],
         "tags": [
           {
-            "line": 77,
+            "line": 78,
             "name": "@TC_12_Add_Hold_Type"
           }
         ]
       },
       {
-        "line": 85,
+        "line": 86,
         "name": "",
         "description": " To search closed status",
         "id": "task-management-website;",
@@ -588,10 +597,22 @@
         "steps": [
           {
             "result": {
-              "duration": 14276887800,
+              "duration": 7265665000,
               "status": "passed"
             },
-            "line": 87,
+            "line": 88,
+            "name": "the user enter the home page and select the status",
+            "match": {
+              "location": "TaskMangementStepdefinition.the_user_enter_the_home_page_and_select_the_status()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9789958500,
+              "status": "passed"
+            },
+            "line": 89,
             "name": "the status field is inspected and search button is clicked",
             "match": {
               "location": "TaskMangementStepdefinition.the_status_field_is_inspected_and_search_button_is_clicked()"
@@ -601,13 +622,13 @@
         ],
         "tags": [
           {
-            "line": 84,
+            "line": 85,
             "name": "@TC_13_search_closed_status"
           }
         ]
       },
       {
-        "line": 90,
+        "line": 92,
         "name": "",
         "description": "",
         "id": "task-management-website;",
@@ -616,32 +637,29 @@
         "steps": [
           {
             "result": {
-              "duration": 5803055700,
+              "duration": 6329598100,
               "status": "passed"
             },
-            "line": 91,
+            "line": 93,
             "name": "Priority field is inspected and search button should be clicked",
             "match": {
               "location": "TaskMangementStepdefinition.priority_field_is_inspected_and_search_button_should_be_clicked()"
             },
-            "keyword": "Then "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 8582864500,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 92,
-            "name": "Print Task table",
-            "match": {
-              "location": "TaskMangementStepdefinition.print_Task_table()"
-            },
-            "keyword": "And "
+            "line": 94,
+            "name": "Print the priority high Task table in the console",
+            "match": {},
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 89,
+            "line": 91,
             "name": "@TC_14_Print_the_priority_field"
           }
         ]

@@ -81,5 +81,4 @@ public class AddEmployeePage {
         Thread.sleep(4000);		
         driver.close();
 	}
-
 }

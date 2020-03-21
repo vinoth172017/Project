@@ -9,8 +9,8 @@
 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
 <dependencies>
-<!--StartReport -->
 
+<!--StartReport -->
 <dependency>
 <groupId>com.aventstack</groupId>
 <artifactId>extentreports</artifactId>
@@ -28,9 +28,7 @@
 <version>3.6.1</version>
 <type>maven-plugin</type>
 </dependency>
-
 <!--EndReport -->
-
 
 <!--StartDependency -->
 <dependency>
@@ -60,8 +58,8 @@
     <artifactId>poi-ooxml</artifactId>
     <version>3.9</version>
 </dependency>
-
 <!--EndDependency -->
+
 <!--Cucumber ReportStart  -->
 <dependency>
     <groupId>net.masterthought</groupId>
